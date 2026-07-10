@@ -4,8 +4,8 @@ metadata:
   labels:
     app: nginx
   name: nginx-deployment
-spec:
   namespace: argocd-ex
+spec:
   replicas: 1
   selector:
     matchLabels:
@@ -17,8 +17,8 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx
-        name: nginx:latest
+      - image: nginx:latest
+        name: nginx
         ports:
         - containerPort: 80
         resources:
