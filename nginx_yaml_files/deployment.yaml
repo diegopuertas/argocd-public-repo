@@ -21,11 +21,4 @@ spec:
         name: nginx
         ports:
         - containerPort: 80
-        resources:
-          requests:
-            memory: "64Mi"
-            cpu: "256Mi"
-          limits:
-            memory: "128Mi"
-            cpu: "512Mi"
 status: {}
